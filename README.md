@@ -1,3 +1,3 @@
-# roman-numbers
+# Roman numbers
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-stdaef)
+- This project is done with **React** and **Styled-Components**.
