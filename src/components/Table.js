@@ -7,14 +7,14 @@ export const Table = ({ data }) => {
       <THead>
         <tr>
           {data.thead.map((romanKey) => (
-            <Th>{romanKey}</Th>
+            <Th key={romanKey}>{romanKey}</Th>
           ))}
         </tr>
       </THead>
       <TBody>
         <tr>
           {data.tbody.map((romanValue) => (
-            <Td>{romanValue}</Td>
+            <Td key={romanValue}>{romanValue}</Td>
           ))}
         </tr>
       </TBody>
