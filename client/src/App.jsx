@@ -1,10 +1,10 @@
 // fundamentos de la Programación funcional.
-// import React from 'react';
+import React from 'react';
 import { convertToRoman } from './functionals/convertToRoman.js';
-import { Table } from './components/Table.js';
+import { Table } from './components/Table.jsx';
 import { data } from './reference/data.js';
-import { Typography } from './components/Typography.js';
-import { Form } from './components/Form.js';
+import { Typography } from './components/Typography.jsx';
+import { Form } from './components/Form.jsx';
 import { Section } from './styles/Section.js';
 
 const { useState } = React;
