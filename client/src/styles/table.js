@@ -1,31 +1,30 @@
 import styled from 'styled-components';
 
-const TableContent = styled('table')(() => ({
+const TableContent = styled('table')(({ theme }) => ({
+  letterSpacing: '0.1em',
+  fontSize: '.8rem',
   borderCollapse: 'collapse',
-  border: '2px solid rgb(200, 200, 200)',
-  letterSpacing: '1px',
-  fontDamily: 'sans-serif',
-  fontAize: '.8rem',
+  border: theme.components.table.bd,
+  boxShadow: theme.components.table.shadow,
 }));
 
 const THead = styled('thead')(() => ({
-  color: 'black',
-  backgroundColor: '#3f87a6',
-  color: '#fff',
+  backgroundColor: '#5c64bd',
+  color: '#eceaeb',
 }));
 
 const Th = styled('th')(() => ({
-  border: '1px solid rgb(190, 190, 190)',
-  padding: '5px 10px',
+  border: '1px solid #eceaeb',
+  padding: '0.45em 0.9em',
 }));
 
 const TBody = styled('tbody')(() => ({
-  backgroundColor: '#e4f0f5',
+  backgroundColor: '#eceaeb',
 }));
 
 const Td = styled('td')(() => ({
   border: '1px solid rgb(190, 190, 190)',
-  padding: '5px 10px',
+  padding: '0.45em 0.9em',
   textAlign: 'center',
 }));
 

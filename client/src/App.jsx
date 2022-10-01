@@ -1,4 +1,3 @@
-// fundamentos de la Programación funcional.
 import React from 'react';
 import { convertToRoman } from './functionals/convertToRoman.js';
 import { Table } from './components/Table.jsx';
@@ -35,13 +34,13 @@ export default function App() {
   };
 
   return (
-    <main>
+    <main style={{ backgroundColor: '#eceaeb', height: '100%', margin: '5px' }}>
       <Section>
         <div>
-          <Typography type="h1">Roman Numbers</Typography>
+          <Typography as="h1">Roman Numbers</Typography>
         </div>
         <div>
-          <Typography type="p">
+          <Typography as="p">
             Roman numerals are a numeral system that originated in ancient Rome.
             Numbers are represented by combinations of letters from the Latin
             alphabet. Modern style uses seven symbols, each with a fixed integer
@@ -50,7 +49,7 @@ export default function App() {
           <Table data={data} />
         </div>
         <div>
-          <Typography type="span">Convert to roman</Typography>
+          <Typography as="span">Convert to roman</Typography>
           <div>
             <Form
               handlers={[formHandler, inputHandler, clickHandler]}
@@ -58,10 +57,10 @@ export default function App() {
             />
           </div>
           <div>
-            <Typography type="span">{error}</Typography>
+            <Typography as="span">{error}</Typography>
           </div>
           <div>
-            <Typography type="span">{output}</Typography>
+            <Typography as="span">{output}</Typography>
           </div>
         </div>
       </Section>

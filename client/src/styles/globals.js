@@ -8,6 +8,6 @@ export const GlobalStyles = createGlobalStyle((props) => ({
     fontFamily: 'Arial',
   },
   body: {
-    color: props.colors ? 'blue' : 'black',
+    backgroundColor: '#5c64bd',
   },
 }));
