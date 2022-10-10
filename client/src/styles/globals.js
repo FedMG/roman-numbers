@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle((props) => ({
+export const GlobalStyles = createGlobalStyle({
   '*': {
     margin: 0,
     padding: 0,
@@ -10,4 +10,4 @@ export const GlobalStyles = createGlobalStyle((props) => ({
   body: {
     backgroundColor: '#5c64bd',
   },
-}));
+});

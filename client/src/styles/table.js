@@ -1,30 +1,30 @@
 import styled from 'styled-components';
 
 const TableContent = styled('table')(({ theme }) => ({
-  letterSpacing: '0.1em',
-  fontSize: '.8rem',
-  borderCollapse: 'collapse',
-  border: theme.components.table.bd,
+  letterSpacing: theme.components.table.letterSpa,
+  fontSize: theme.components.table.fz,
   boxShadow: theme.components.table.shadow,
+  border: theme.components.table.border.table,
+  borderCollapse: 'collapse',
 }));
 
-const THead = styled('thead')(() => ({
-  backgroundColor: '#5c64bd',
-  color: '#eceaeb',
+const THead = styled('thead')(({ theme }) => ({
+  backgroundColor: theme.components.table.bgColor.thead,
+  color: theme.components.table.color,
 }));
 
-const Th = styled('th')(() => ({
-  border: '1px solid #eceaeb',
-  padding: '0.45em 0.9em',
+const Th = styled('th')(({ theme }) => ({
+  border: theme.components.table.border.th,
+  padding: theme.components.table.pad.th_td,
 }));
 
-const TBody = styled('tbody')(() => ({
-  backgroundColor: '#eceaeb',
+const TBody = styled('tbody')(({ theme }) => ({
+  backgroundColor: theme.components.table.bgColor.tbody,
 }));
 
-const Td = styled('td')(() => ({
-  border: '1px solid rgb(190, 190, 190)',
-  padding: '0.45em 0.9em',
+const Td = styled('td')(({ theme }) => ({
+  border: theme.components.table.border.td,
+  padding: theme.components.table.pad.th_td,
   textAlign: 'center',
 }));
 

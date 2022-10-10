@@ -37,10 +37,12 @@ export default function App() {
     <main style={{ backgroundColor: '#eceaeb', height: '100%', margin: '5px' }}>
       <Section>
         <div>
-          <Typography as="h1">Roman Numbers</Typography>
+          <Typography as="h1" title>
+            Roman Numbers
+          </Typography>
         </div>
         <div>
-          <Typography as="p">
+          <Typography as="p" text>
             Roman numerals are a numeral system that originated in ancient Rome.
             Numbers are represented by combinations of letters from the Latin
             alphabet. Modern style uses seven symbols, each with a fixed integer
@@ -49,7 +51,9 @@ export default function App() {
           <Table data={data} />
         </div>
         <div>
-          <Typography as="span">Convert to roman</Typography>
+          <Typography as="span" subtitle>
+            Convert to roman
+          </Typography>
           <div>
             <Form
               handlers={[formHandler, inputHandler, clickHandler]}
@@ -57,10 +61,14 @@ export default function App() {
             />
           </div>
           <div>
-            <Typography as="span">{error}</Typography>
+            <Typography as="span" error>
+              {error}
+            </Typography>
           </div>
           <div>
-            <Typography as="span">{output}</Typography>
+            <Typography as="span" output>
+              {output}
+            </Typography>
           </div>
         </div>
       </Section>
