@@ -6,6 +6,8 @@ const TableContent = styled('table')(({ theme }) => ({
   boxShadow: theme.components.table.shadow,
   border: theme.components.table.border.table,
   borderCollapse: 'collapse',
+  width: '100%',
+  height: '100%',
 }));
 
 const THead = styled('thead')(({ theme }) => ({

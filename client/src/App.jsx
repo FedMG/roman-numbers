@@ -1,10 +1,11 @@
 import React from 'react';
 import { convertToRoman } from './functionals/convertToRoman.js';
 import { Table } from './components/Table.jsx';
-import { Form } from './styled/form.js';
+import { Form } from './components/Form.jsx';
 import { data } from './reference/data.js';
 import { Typography } from './styled/Typography.js';
 import { Section } from './styled/Section.js';
+import { Main } from './styled/Main.js';
 
 const { useState } = React;
 
@@ -34,23 +35,41 @@ export default function App() {
   };
 
   return (
-    <main style={{ backgroundColor: '#eceaeb', height: '100%', margin: '5px' }}>
+    <Main>
       <Section>
-        <div>
+        <div
+          style={{
+            width: '100%',
+            textAlign: 'center',
+          }}
+        >
           <Typography as="h1" title>
             Roman Numbers
           </Typography>
         </div>
-        <div>
+        <div style={{ width: '100%' }}>
           <Typography as="p" text>
             Roman numerals are a numeral system that originated in ancient Rome.
             Numbers are represented by combinations of letters from the Latin
             alphabet. Modern style uses seven symbols, each with a fixed integer
             value:
           </Typography>
+        </div>
+        <div
+          style={{
+            width: '100%',
+          }}
+        >
           <Table data={data} />
         </div>
-        <div>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '0.9em 0',
+            width: '100%',
+          }}
+        >
           <Typography as="span" subtitle>
             Convert to roman
           </Typography>
@@ -60,18 +79,18 @@ export default function App() {
               value={input}
             />
           </div>
-          <div>
+          <div style={{ minHeight: '2em' }}>
             <Typography as="span" error>
               {error}
             </Typography>
           </div>
-          <div>
+          <div style={{ border: '3px solid #5c64bd', padding: '1em' }}>
             <Typography as="span" output>
-              {output}
+              The number {input} in roman is: {output}
             </Typography>
           </div>
         </div>
       </Section>
-    </main>
+    </Main>
   );
 }

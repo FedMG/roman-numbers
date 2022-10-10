@@ -3,10 +3,9 @@ export const table = {
     fz: '.8rem',
     color: '#eceaeb',
     letterSpa: '0.1em',
-    shadow: '0.2px 0.5px 3px 0.7px #000',
-
+    shadow: '0 0.15em 0.3em 0 #111',
     pad: {
-      th_td: '0.45em 0.9em',
+      th_td: '0.65em 0.65em',
     },
     border: {
       table: '2px solid #5c64bd',

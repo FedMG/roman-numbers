@@ -1,6 +1,6 @@
 import { table } from '../themes/table.js';
 import { typography } from '../themes/typography.js';
-import { form } from '../themes/form.js';
+import { form } from '../themes/board.js';
 
 export const theme = {
   palette: {
