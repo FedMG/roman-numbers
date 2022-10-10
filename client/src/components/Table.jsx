@@ -1,5 +1,5 @@
 import React from 'react';
-import { TableContent, THead, Th, TBody, Td } from '../styles/table.js';
+import { TableContent, THead, Th, TBody, Td } from '../styled/table.js';
 
 export const Table = ({ data }) => {
   return (

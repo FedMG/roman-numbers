@@ -1,5 +1,6 @@
 import { table } from '../themes/table.js';
 import { typography } from '../themes/typography.js';
+import { form } from '../themes/form.js';
 
 export const theme = {
   palette: {
@@ -9,17 +10,6 @@ export const theme = {
   components: {
     ...table,
     ...typography,
-    // Form component
-    form: {
-      input: {
-        fontSize: '',
-        padding: '',
-        border: '',
-      },
-      button: {
-        color: '#eceaeb',
-        bgColor: '#5c64bd',
-      },
-    },
+    ...form,
   },
 };

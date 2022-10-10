@@ -1,6 +1,6 @@
 import React from 'react';
-import { Input } from './Input.js';
-import { Button } from './Button.js';
+import { Input } from '../styled/Input.js';
+import { Button } from '../styled/Button.js';
 
 export const Form = ({ handlers, value }) => {
   const [formHandler, inputHandler, clickHandler] = handlers;

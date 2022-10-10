@@ -1,10 +1,10 @@
 import React from 'react';
 import { convertToRoman } from './functionals/convertToRoman.js';
 import { Table } from './components/Table.jsx';
+import { Form } from './styled/form.js';
 import { data } from './reference/data.js';
-import { Typography } from './components/Typography.jsx';
-import { Form } from './components/Form.jsx';
-import { Section } from './styles/Section.js';
+import { Typography } from './styled/Typography.js';
+import { Section } from './styled/Section.js';
 
 const { useState } = React;
 
