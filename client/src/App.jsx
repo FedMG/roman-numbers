@@ -6,6 +6,7 @@ import { data } from './reference/data.js';
 import { Typography } from './styled/Typography.js';
 import { Section } from './styled/Section.js';
 import { Main } from './styled/Main.js';
+import { Container } from './styled/Container.js';
 
 const { useState } = React;
 
@@ -52,59 +53,32 @@ export default function App() {
   return (
     <Main>
       <Section>
-        <div
-          style={{
-            width: '100%',
-            textAlign: 'center',
-          }}
-        >
+        <Container title>
           <Typography as="h1" title>
             Roman Numbers
           </Typography>
-        </div>
-        <div>
-          <Typography as="p" text>
-            Roman numerals are a numeral system that originated in ancient Rome.
-            Numbers are represented by combinations of letters from the Latin
-            alphabet. Modern style uses seven symbols, each with a fixed integer
-            value:
-          </Typography>
-        </div>
-        <div
-          style={{
-            width: '100%',
-          }}
-        >
-          <Table data={data} />
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '0.9em 0',
-            width: '100%',
-          }}
-        >
+        </Container>
+        <Typography as="p" text>
+          Roman numerals are a numeral system that originated in ancient Rome.
+          Numbers are represented by combinations of letters from the Latin
+          alphabet. Modern style uses seven symbols, each with a fixed integer
+          value:
+        </Typography>
+        <Table data={data} />
+        <Container form>
           <Typography as="span" subtitle>
             Convert to roman
           </Typography>
-          <div>
-            <Form
-              handlers={[formHandler, inputHandler, clickHandler]}
-              value={response.input}
-            />
-          </div>
-          <div style={{ minHeight: '2em' }}>
+          <Form
+            handlers={[formHandler, inputHandler, clickHandler]}
+            value={response.input}
+          />
+          <Container error>
             <Typography as="span" error>
               {response.error}
             </Typography>
-          </div>
-          <div
-            style={{
-              border: '3px solid #5c64bd',
-              padding: '1em',
-            }}
-          >
+          </Container>
+          <Container>
             <Typography as="span" output>
               The number{' '}
               <span
@@ -117,8 +91,8 @@ export default function App() {
               </span>{' '}
               in roman is: {response.output}
             </Typography>
-          </div>
-        </div>
+          </Container>
+        </Container>
       </Section>
     </Main>
   );
