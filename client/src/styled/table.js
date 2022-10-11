@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const TableContent = styled('table')(({ theme }) => ({
   letterSpacing: theme.components.table.letterSpa,
   fontSize: theme.components.table.fz,
-  boxShadow: theme.components.table.shadow,
   border: theme.components.table.border.table,
   borderCollapse: 'collapse',
   width: '100%',

@@ -1,7 +1,11 @@
 {
-  "name": "public",
+  "name": "roman-numbers",
+  "author": "FedMG",
+  "keywords": ["roman", "numbers"],
+  "description": "A simple project that generate roman numbers",
   "private": true,
-  "version": "0.0.0",
+  "license": "MIT",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -11,7 +11,7 @@ export const typography = {
       text: 'Rubik',
     },
     colors: {
-      error: 'red',
+      error: '#ed2424de',
       output: '#5c64bd',
       normal: '#111',
     },
