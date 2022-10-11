@@ -4,10 +4,9 @@ import { Table } from './components/Table.jsx';
 import { Form } from './components/Form.jsx';
 import { data } from './reference/data.js';
 import { Typography } from './styled/Typography.js';
-import { Section } from './styled/Section.js';
 import { Main } from './styled/Main.js';
+import { Section } from './styled/Section.js';
 import { Container } from './styled/Container.js';
-
 const { useState } = React;
 
 const responses = {
@@ -26,6 +25,7 @@ export default function App() {
 
     setResponse({
       ...responses,
+      input: response.input,
       error: 'Enter a integer from 1 to 9',
     });
   };
@@ -50,6 +50,19 @@ export default function App() {
     e.preventDefault();
   };
 
+  const result = response.output ? (
+    <>
+      {response.input} in roman is{' '}
+      <Typography as="span" output>
+        {response.output}
+      </Typography>
+    </>
+  ) : response.error ? (
+    <Typography as="span" error>
+      {response.error}
+    </Typography>
+  ) : null;
+
   return (
     <Main>
       <Section>
@@ -73,25 +86,7 @@ export default function App() {
             handlers={[formHandler, inputHandler, clickHandler]}
             value={response.input}
           />
-          <Container error>
-            <Typography as="span" error>
-              {response.error}
-            </Typography>
-          </Container>
-          <Container>
-            <Typography as="span" output>
-              The number{' '}
-              <span
-                style={{
-                  margin: '0 0.3em',
-                  color: '#5c64bd',
-                }}
-              >
-                {response.output ? response.input : null}
-              </span>{' '}
-              in roman is: {response.output}
-            </Typography>
-          </Container>
+          <Container>{result}</Container>
         </Container>
       </Section>
     </Main>

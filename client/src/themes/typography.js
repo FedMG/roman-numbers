@@ -12,7 +12,7 @@ export const typography = {
     },
     colors: {
       error: 'red',
-      output: 'purple',
+      output: '#5c64bd',
       normal: '#111',
     },
   },

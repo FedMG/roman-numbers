@@ -13,10 +13,10 @@ export const Container = styled('div')((props) =>
         width: '100%',
         textAlign: 'center',
       }
-    : props.error
-    ? { minHeight: '2em' }
     : {
         border: '3px solid #5c64bd',
         padding: '1em',
+        minHeight: '3.8em',
+        backgroundColor: '#f5f5f5',
       }
 );

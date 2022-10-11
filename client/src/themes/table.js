@@ -3,7 +3,7 @@ export const table = {
     fz: '.8rem',
     color: '#eceaeb',
     letterSpa: '0.1em',
-    shadow: '0 0.15em 0.3em 0 #111',
+    shadow: '0 0.13em 0.24em 0 #111',
     pad: {
       th_td: '0.65em 0.65em',
     },
