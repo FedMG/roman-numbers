@@ -1,17 +1,17 @@
-import React from 'react';
-import { convertToRoman } from './functionals/convertToRoman.js';
-import { Table } from './components/Table.jsx';
-import { Form } from './components/Form.jsx';
-import { data } from './reference/data.js';
-import { Typography } from './styled/Typography.js';
-import { Main } from './styled/Main.js';
-import { Section } from './styled/Section.js';
-import { Container } from './styled/Container.js';
+import React from "react";
+import { convertToRoman } from "./functionals/convertToRoman.js";
+import { Table } from "./components/Table.jsx";
+import { Form } from "./components/Form.jsx";
+import { data } from "./reference/data.js";
+import { Typography } from "./styled/Typography.js";
+import { Main } from "./styled/Main.js";
+import { Section } from "./styled/Section.js";
+import { Container } from "./styled/Container.js";
 const { useState } = React;
 
 const responses = {
-  input: '',
-  output: '',
+  input: "",
+  output: "",
   error: false,
 };
 
@@ -26,7 +26,7 @@ export default function App() {
     setResponse({
       ...responses,
       input: response.input,
-      error: 'Enter a integer from 1 to 9',
+      error: "Enter a integer from 1 to 9",
     });
   };
 
@@ -42,7 +42,7 @@ export default function App() {
 
     setResponse({
       ...responses,
-      error: 'Enter a integer from 1 to 9',
+      error: "Enter a integer from 1 to 9",
     });
   };
 
@@ -52,7 +52,7 @@ export default function App() {
 
   const result = response.output ? (
     <>
-      {response.input} in roman is{' '}
+      {response.input} in roman is{" "}
       <Typography as="span" output>
         {response.output}
       </Typography>

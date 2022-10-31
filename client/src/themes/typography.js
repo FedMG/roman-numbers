@@ -4,16 +4,16 @@ export const typography = {
       title: '1.6em',
       subtitle: '1.3em',
       error: '1.2em',
-      text: '1.15em',
+      text: '1.15em'
     },
     ffamily: {
       title: 'Noto sans',
-      text: 'Rubik',
+      text: 'Rubik'
     },
     colors: {
       error: '#ed2424de',
       output: '#5c64bd',
-      normal: '#111',
-    },
-  },
-};
+      normal: '#111'
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Button = styled('button')(({ theme: { components } }) => ({
   fontSize: components.form.fsizes.btn,
@@ -9,10 +9,10 @@ export const Button = styled('button')(({ theme: { components } }) => ({
   backgroundColor: components.form.bgColors.btn,
   '&:hover': {
     backgroundColor: components.form.bgColors.btnHover,
-    color: components.form.colors.btnHover,
+    color: components.form.colors.btnHover
   },
   '&:active': {
     backgroundColor: components.form.bgColors.btnActive,
-    color: components.form.colors.btnActive,
-  },
-}));
+    color: components.form.colors.btnActive
+  }
+}))

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Input = styled('input')(({ theme: { components } }) => ({
   padding: components.form.pad.input,
@@ -8,6 +8,6 @@ export const Input = styled('input')(({ theme: { components } }) => ({
   width: '100%',
 
   '&:active': {
-    outline: '1.2px solid #4e559f',
-  },
-}));
+    outline: '1.2px solid #4e559f'
+  }
+}))
