@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const Section = styled('section')(({ theme }) => ({
+export const Section = styled('section')(() => ({
   padding: '1.4em',
   display: 'flex',
   flexWrap: 'wrap',
@@ -8,5 +8,5 @@ export const Section = styled('section')(({ theme }) => ({
   gap: '1.2em 0',
   maxWidth: '45em',
   borderRadius: '0.3em',
-  boxShadow: '0 0.15em 0.9em 0 #111',
-}));
+  boxShadow: '0 0.15em 0.9em 0 #111'
+}))

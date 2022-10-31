@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const Main = styled('main')(({ theme }) => ({
+export const Main = styled('main')(() => ({
   height: '100vh',
   width: '100vw',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center',
-}));
+  alignItems: 'center'
+}))
