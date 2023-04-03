@@ -1,6 +1,8 @@
 # Roman numbers
 
-- This project was made with **React** and **Styled-Components**.
+This project was made with JavaScript, ReactJS with Vite, and Styled Components
+
+I programmed an algorithm to convert an integer as input to a Roman numeral. Applied knowledge from the JavaScript course: "Algorithms and Data structure". Built a component user interface with ReactJS. Component design with Styled components. Deployed to production with Vercel.
 
 <img src="/public/roman-numerals.webp" alt="An image with a board user interface where you can put an integer number and it converts and returns to you the a roman number" width="500" />
 
