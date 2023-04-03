@@ -2,6 +2,8 @@
 
 - This project was made with **React** and **Styled-Components**.
 
+<img src="/public/roman-numerals.webp" alt="An image with a board user interface where you can put an integer number and it converts and returns to you the a roman number" width="500" />
+
 ## Instructions
 
 1. Type `code .` on the terminal to open visual studio code or open manually.
